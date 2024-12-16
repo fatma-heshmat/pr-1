@@ -1,0 +1,685 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 6000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100% ;
+    height: 50px;
+    background-color: rgba(73, 65, 51, 0.556);
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+.i1{
+   float: left;
+   font-size: 23px;
+   color: white;
+   margin-top: 5px;
+}
+.list{
+    list-style: none;
+    float: right;
+    margin-right:  25px;
+    font-size: 14px;
+}
+.list li{
+   display: inline-block;  
+   margin: 25px;
+   margin-top: 15px;
+   font-weight: bold;
+}
+.list   a {
+    text-decoration: none;
+    color: white;
+}
+.div1{
+    margin: 10px 0px 0px 30px;
+}
+.t1{
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 20px ;
+    background-color: white;
+}
+.div2{
+    position: relative;
+}
+.div3{
+    position: absolute;
+    display: inline;
+    margin-left: -185px;
+    padding-top : 7px ;
+}
+.home{
+    width: 100%;
+    height: 100vh ;
+    background-image: url(../images/photo2_2024-11-29_18-45-06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0 , 0.7) ;
+}
+.home-content {
+     width: 60%;
+     position: absolute;
+     top :50% ;
+     left: 50%;
+     transform: translate( -50%  , -50% );
+     text-align: center;
+}
+.home-title {
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.home-p {
+    color: #eae8e8;
+    margin: 20px  0px ;
+    letter-spacing: 2px;
+}
+.home-btn{
+    width: 145px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.home-btn2 {
+    background-color:rgb(133, 68, 19);
+    color:white;
+    margin-left: 10px;
+}
+.home-btn:hover {
+    opacity: 0.5 ;
+}
+.title1{
+    text-align: center;
+    padding-top: 80px ;
+    font-size: 40px;
+    line-height: 60px;
+}
+.line1{
+    width: 150px;
+    height: 4px;
+    background-color:rgb(133, 68, 19);
+    margin: auto;
+}
+.divA{
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(252, 252, 251, 0.823);
+    float: left;
+    margin: 80px 10px 0px 120px;
+    text-align: center;
+    position: relative;
+}
+.i2 , .title2 , .p1 , .a1{
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+}
+.i2{
+   display: inline-block;
+   font-size: 30px;
+   color: rgb(133, 68, 19);  
+}
+.p1{
+    color: rgb(129, 129, 129);
+    padding: 20px 3px 20px 0px;
+}
+.a1{
+    text-decoration: none;
+    color: rgb(133, 68, 19);
+} 
+ .divA:after{
+    content: " ";
+    position: absolute;
+    width: 0 ;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0 , 0.6);
+    z-index: -1;
+ }
+ .divA:hover::after{
+   width: 100%;
+   height: 100%;
+   transition: 0.5s; 
+ }
+ .divA:hover .div-overlay{
+    visibility: visible;
+ }
+ .divA:hover .title2{
+    color: rgb(133, 68, 19);
+ }
+ .divA:hover .p1{
+     color: black;
+  }
+  .divA:hover .i2{
+     color: rgb(93, 52, 20) ;
+  }
+ .feature{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 254, 254);
+ }
+ .title3{
+   margin-top: 550px;
+   padding-top: 40px;
+   text-align: center;
+   font-size: 45px;
+   text-transform: capitalize;
+ }
+ .line2{
+    width: 150px;
+    height: 4px;
+    background-color: rgb(78, 46, 8);
+    margin: auto;
+    margin-top: 8px;
+ }
+ .parecate{
+    margin-top: 50px;
+ }
+ .category1 , .category2 , .category3 , .category4 , .category5 , .category6{
+    width: 300px;
+    height: 180px;
+    display: inline-block;
+    margin: 0px -70px 30px 150px;
+    text-align: center;
+    position: relative;
+    background-size: cover; 
+}
+.category1{
+   background-image: url(../images/photo_2024-12-01_23-18-21.jpg);  
+}
+.category2{
+    background-image: url(../images/photo_2024-12-01_23-36-12.jpg);  
+ }
+ .category3{
+    background-image: url(../images/photo_2024-12-01_23-38-10.jpg);
+ }
+ .category4{
+    background-image: url(../images/photo_2024-12-01_23-42-02.jpg);  
+ }
+ .category5{
+    background-image: url(../images/photo_2024-12-01_23-42-44.jpg); 
+ }
+ .category6{
+    background-image: url(../images/photo_2024-12-01_23-44-30.jpg);
+     
+ }
+ .overlay{
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.604);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.overlay .title4{
+    text-transform: uppercase;
+    color: rgb(177, 164, 164);
+    padding-top: 25px;
+    font-size: 30px;
+}
+.overlay .i3{
+    color: rgb(171, 158, 158);
+    background-color: white ;
+    width: 40px;
+    border-radius: 5px;
+    font-size: 25px;
+    margin: 20px 2px 0px 0px;
+}
+.overlay .p2{
+    color: rgb(177, 164, 164);
+    padding-top: 20px;
+}
+.category1:hover .overlay , .category2:hover .overlay , .category3:hover .overlay , .category4:hover .overlay , .category5:hover .overlay , .category6:hover .overlay{
+    visibility: visible;
+ }
+.title5{
+  text-align: center;
+  font-size: 50px;
+}
+.line3{
+    width: 150px;
+    height: 4px;
+    background-color:rgb(78, 46, 8) ;
+    margin: auto;
+    margin-top: 8px;
+}
+.container{
+  margin: auto;
+  width: 100%;
+}
+.offer {
+    width: 20%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative; 
+    margin: 30px 10px 0px 120px;
+    text-align: center;
+}
+.div-icon{
+    float: left;
+}
+.div-icon .offeri{
+    font-size: 30px;
+    color: rgb(78, 46, 8);
+    margin-left: 10px;
+    margin-top: 14px;
+}
+.div-info{
+    margin-top: 14px;
+}
+.offerp{
+   margin: 20px 30px; 
+   color: gray;
+}
+.offer:hover .offertitle{
+  color: rgb(78, 46, 8);
+}
+.offer:hover .offerp{
+    color: black;
+}
+.offer::after{
+content: " ";
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+position: absolute;
+background-color: rgba(0, 0, 0 , 0.2);
+z-index: -1;
+}
+.offer:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.5S;
+}
+.choose-us{
+    width: 40%;
+    height: 100vh;
+    margin: 220px 0px 0px 120px ;
+    float: left;
+}
+.choose-tit{
+    font-size: 40px;
+    text-transform: capitalize; 
+}
+.line4{
+    width: 150px;
+    height: 4px;
+    background-color: rgb(106, 64, 12);
+}
+.choose-p{
+    margin: 50px 0px;
+    color: gray;
+}
+.choosesp{
+    line-height: 60px;
+    color: gray;
+}  
+.choose-img{
+    width: 40%;
+    height: 100vh;
+    float: left;
+    margin: 220px 0px 0px 180px ;
+}
+.choose-img .icons{
+    color: rgb(106, 64, 12);
+    margin-left: 180px;
+    padding-top: 10px;
+}
+.choose-img .choosei{
+    padding-left: 10px;
+    color: gray;
+}
+.choosei:hover{
+    color:rgb(106, 64, 12) ;
+}
+.div-img{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/mid-century-modern-living-room-interior-design-with-monstera-tree.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 900px;
+}
+.parent-img{
+    position: relative;
+    height: 100%;
+}
+.img-overlay{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+}
+.img-info{
+ display: inline-block;
+ margin: 130px 130px;
+ text-align: center;
+}
+.img-i{
+ font-size: 40px;
+ padding-bottom: 15px;
+ color: rgb(71, 44, 9);
+}
+.img-p{
+    font-weight: bold;
+}
+.ct{
+    width: 100%;
+    margin: auto;
+   margin-top: 800px;
+}
+.price-title{
+  margin: 150px 0px 0px 580px;
+  font-size: 35px;
+}
+.price-line{
+    width: 220px;
+    height: 4px;
+    background-color: rgb(106, 64, 12);
+    margin: auto;
+    margin-top: 10px;
+}
+.pricing{
+    width: 340px;
+    height: 450px;
+    border: 1px solid rgb(106, 64, 12);
+    border-radius: 10px;
+    margin: 50px 0px 0px 120px;
+    float: left;
+    position: relative;
+}
+.pricing-p , .pricingp{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+.pricingp{
+    text-transform: capitalize;
+}
+.pricing-p{
+    text-transform: uppercase;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:2px solid rgb(106, 64, 12);
+    margin: auto;
+    margin-top: 15px;
+    text-align: center ;
+}
+.circle-h {
+    margin-top: 20px;
+    font-size: 35px;
+}
+.circle-p{
+    font-weight: bold;
+}
+.pricing-btn{
+    width: 180px;
+    height: 30px;
+    border: 1px solid rgb(106, 64, 12);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.pricing:hover .pricing-p{
+    color: rgb(106, 64, 12);
+}
+.pricing:hover .circle{
+    border: 3px solid rgb(98, 59, 12);
+}
+.pricing::after{
+    content: " ";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(106, 64, 12,0.5);
+    z-index: -1;
+    transition: 0.5s;
+}
+.pricing:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.div-img1{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/32d-contemporary-living-room-interior-modern-furniture.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 700px;
+}
+.img1-info{
+    float: left;
+    width: 40%;
+    margin: 130px 60px;
+    position: relative;
+}
+.img1-title {
+ display: inline-block;
+ margin: 25px 0px 0px 110px;
+ font-size: 30px;
+ text-transform: capitalize;
+}
+.img1-title1{
+    margin: 10px 0px 0px 110px;
+    color: rgb(68, 45, 16);
+}
+.img1-p{
+    margin: 30px 0px 0px -2px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(117, 114, 114);
+}
+.img1{
+    border-radius: 50%;
+    position: absolute;
+}
+.team-title{
+   margin-top: 150px;
+  text-align: center;
+  font-size: 32px;
+}
+.cc{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.team-content{
+    height: 80vh;
+}
+.team-item{
+    float: left;
+    background-color: rgb(125, 104, 77);
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+}
+.tt{
+    margin: 0px 5%;
+}
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0 , 0.5);
+    visibility: hidden;
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(176, 186, 194);
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+}
+.team-overlay a i {
+    line-height: 40px;
+}
+.team-info-title{
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+.team-info-sp1{
+    text-transform: uppercase;
+    color: white;
+}
+.team-item:hover .team-info-title{
+   color: white;
+}
+.team-item:hover .team-info-sp1{
+    color: black;
+ }
+ .team-item:hover .team-overlay{
+   visibility: visible;
+ }
+ .team-item:after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0 , 0.5);
+    transition: 0.5s;
+ }
+ .team-item:hover::after{
+    width: 100%;
+    height: 100%;
+ }
+ .news-title{
+    text-align: center;
+    font-size: 38px;
+ }
+ .news{
+    width: 360px;
+    height: 450px;
+    border: 1px solid rgb(106, 64, 12);
+    border-radius: 10px;
+    margin: 50px 0px 0px 120px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.news-img{
+    padding-top: 20px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+.news-icon{
+    padding-top: 25px;
+    color: rgb(124, 74, 36);
+    margin-left: 16px;
+}
+.news-sp{
+    font: normal bold 17px small;
+    text-transform: capitalize;
+}
+.news-title1 , .news-p{
+    margin: 15px 0px;
+}
+.news-p{
+    color: rgb(105, 105, 105);
+}
+.news-a{
+    text-decoration: none;
+    color: rgb(78, 46, 8);
+}
+.news:hover .news-title1{
+    color: gray;
+}
+.news:hover .news-p{
+    color: black;
+}
+.news::after{
+    content: " ";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(106, 64, 12,0.5);
+    z-index: -1;
+    transition: 0.5s;
+}
+.news:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.parent-footer{
+    position: relative;
+    margin-top: 680px;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(132, 117, 96);
+    position: absolute;
+    text-align: center;
+}
+.footer-img{
+   display: block;
+   margin: auto;
+   padding: 15px 0px;
+   border-radius: 25px;
+}
+.foot-icon{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 26px;
+    padding-top: 18px;
+    color: rgb(106, 64, 12);
+}
+.foot-p{
+    padding: 15px 0px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+}
+.foot-icon:hover{
+    background-color: rgb(194, 166, 122);
+}
